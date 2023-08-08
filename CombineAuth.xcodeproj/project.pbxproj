@@ -11,6 +11,12 @@
 		FC112EC22A82607000005377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112EC12A82607000005377 /* ContentView.swift */; };
 		FC112EC42A82607100005377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC112EC32A82607100005377 /* Assets.xcassets */; };
 		FC112EC72A82607100005377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC112EC62A82607100005377 /* Preview Assets.xcassets */; };
+		FC112ECF2A82670000005377 /* AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112ECE2A82670000005377 /* AnimatedGradient.swift */; };
+		FC112ED12A82695000005377 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112ED02A82695000005377 /* CustomTextField.swift */; };
+		FC112ED42A826D2700005377 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112ED32A826D2700005377 /* CustomTextFieldStyle.swift */; };
+		FC112ED72A82707500005377 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112ED62A82707500005377 /* Color.swift */; };
+		FC112ED92A82723300005377 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112ED82A82723300005377 /* String.swift */; };
+		FC112EDB2A82958500005377 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112EDA2A82958500005377 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		FC112EC12A82607000005377 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC112EC32A82607100005377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC112EC62A82607100005377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC112ECE2A82670000005377 /* AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradient.swift; sourceTree = "<group>"; };
+		FC112ED02A82695000005377 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FC112ED32A826D2700005377 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		FC112ED62A82707500005377 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FC112ED82A82723300005377 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FC112EDA2A82958500005377 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,9 @@
 			children = (
 				FC112EBF2A82607000005377 /* CombineAuthApp.swift */,
 				FC112EC12A82607000005377 /* ContentView.swift */,
+				FC112EDA2A82958500005377 /* ViewModel.swift */,
+				FC112ECD2A8266D600005377 /* CommonUI */,
+				FC112ED52A82703400005377 /* Extension */,
 				FC112EC32A82607100005377 /* Assets.xcassets */,
 				FC112EC52A82607100005377 /* Preview Content */,
 			);
@@ -65,6 +80,33 @@
 				FC112EC62A82607100005377 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC112ECD2A8266D600005377 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				FC112ECE2A82670000005377 /* AnimatedGradient.swift */,
+				FC112ED02A82695000005377 /* CustomTextField.swift */,
+				FC112ED22A826D0C00005377 /* Style */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		FC112ED22A826D0C00005377 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				FC112ED32A826D2700005377 /* CustomTextFieldStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		FC112ED52A82703400005377 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC112ED62A82707500005377 /* Color.swift */,
+				FC112ED82A82723300005377 /* String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC112ED12A82695000005377 /* CustomTextField.swift in Sources */,
+				FC112ECF2A82670000005377 /* AnimatedGradient.swift in Sources */,
 				FC112EC22A82607000005377 /* ContentView.swift in Sources */,
 				FC112EC02A82607000005377 /* CombineAuthApp.swift in Sources */,
+				FC112ED92A82723300005377 /* String.swift in Sources */,
+				FC112ED42A826D2700005377 /* CustomTextFieldStyle.swift in Sources */,
+				FC112EDB2A82958500005377 /* ViewModel.swift in Sources */,
+				FC112ED72A82707500005377 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
