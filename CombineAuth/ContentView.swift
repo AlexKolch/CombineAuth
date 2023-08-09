@@ -11,9 +11,7 @@ struct ContentView: View {
 
     @StateObject private var viewModel = ViewModel()
 
-    private let screen = UIApplication.shared.connectedScenes.compactMap {
-        ($0 as? UIWindowScene)?.keyWindow}.first?.screen.bounds.width
-
+    private let screen = UIScreen.main.bounds.width
 
     var body: some View {
         ZStack {
@@ -23,12 +21,10 @@ struct ContentView: View {
 
                 VStack(spacing: 35) {
 
-                    if let screen = screen {
-                        Image("Boy")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: screen / 1.25, height: screen / 1.25)
-                    }
+                    Image("Boy")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: screen / 1.25, height: screen / 1.25)
 
                     Text("Authorization")
                         .font(.title)
@@ -37,23 +33,35 @@ struct ContentView: View {
                         .padding(8)
 
                     VStack(spacing: 20) {
-                        CustomTextField(title: "Email", text: $viewModel.email, isSecure: false)
-                        CustomTextField(title: "Phone", text: $viewModel.phone, isSecure: false)
-                        CustomTextField(title: "Password", text: $viewModel.password, isSecure: true)
+                        CustomTextField(title: "Email", text: $viewModel.email, promt: viewModel.emailPromt, isSecure: false)
+                        CustomTextField(title: "Phone", text: $viewModel.phone, promt: viewModel.phonePrompt, isSecure: false)
+                            .onChange(of: viewModel.phone) { _ in
+                                DispatchQueue.main.async {
+                                    viewModel.phone = viewModel.phone.formattedMask(text: viewModel.phone, mask: "+X (XXX) XXX-XX-XX") ///применяем маску
+                                }
+                            }
+                            .keyboardType(.decimalPad) //модификатор задает цифровую клавиатуру
+                        CustomTextField(title: "Password", text: $viewModel.password, promt: viewModel.passwordPrompt, isSecure: true)
                     }
                     .padding(.horizontal)
 
                     Button {} label: {
                         ZStack {
-                            AnimatedGradient(colors: [.purple, .cyan])
-                                .cornerRadius(12)
-                                .frame(width: 150, height: 50)
+                            if viewModel.canSubmit {
+                                AnimatedGradient(colors: [.purple, .cyan])
+                            } else {
+                                Rectangle()
+                                    .foregroundColor(.gray)
+                            }
                             Text("Login")
                                 .foregroundColor(.white)
                                 .fontWeight(.semibold)
                                 .fontDesign(.rounded)
                         }
+                        .cornerRadius(12)
+                        .frame(width: 150, height: 50)
                     }
+                    .disabled(!viewModel.canSubmit)
                 }
             }
         }

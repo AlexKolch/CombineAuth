@@ -17,6 +17,7 @@
 		FC112ED72A82707500005377 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112ED62A82707500005377 /* Color.swift */; };
 		FC112ED92A82723300005377 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112ED82A82723300005377 /* String.swift */; };
 		FC112EDB2A82958500005377 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112EDA2A82958500005377 /* ViewModel.swift */; };
+		FC112EDE2A83855300005377 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC112EDD2A83855300005377 /* Regex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FC112ED62A82707500005377 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FC112ED82A82723300005377 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FC112EDA2A82958500005377 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FC112EDD2A83855300005377 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				FC112EDA2A82958500005377 /* ViewModel.swift */,
 				FC112ECD2A8266D600005377 /* CommonUI */,
 				FC112ED52A82703400005377 /* Extension */,
+				FC112EDC2A83853D00005377 /* Enum */,
 				FC112EC32A82607100005377 /* Assets.xcassets */,
 				FC112EC52A82607100005377 /* Preview Content */,
 			);
@@ -107,6 +110,14 @@
 				FC112ED82A82723300005377 /* String.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FC112EDC2A83853D00005377 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				FC112EDD2A83855300005377 /* Regex.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				FC112EC22A82607000005377 /* ContentView.swift in Sources */,
 				FC112EC02A82607000005377 /* CombineAuthApp.swift in Sources */,
 				FC112ED92A82723300005377 /* String.swift in Sources */,
+				FC112EDE2A83855300005377 /* Regex.swift in Sources */,
 				FC112ED42A826D2700005377 /* CustomTextFieldStyle.swift in Sources */,
 				FC112EDB2A82958500005377 /* ViewModel.swift in Sources */,
 				FC112ED72A82707500005377 /* Color.swift in Sources */,
