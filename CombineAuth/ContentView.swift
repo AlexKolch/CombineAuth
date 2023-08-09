@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.dark
-                .ignoresSafeArea()
+                .ignoresSafeArea() 
             ScrollView {
 
                 VStack(spacing: 35) {

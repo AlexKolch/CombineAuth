@@ -4,7 +4,8 @@ SwiftUI &amp; Combine
 Completed tasks: 
 1. Implemented login screen
 2. Implemented data validation
-3. Made the screen on SwiftUI
+3. Applied a mask when entering a phone number
+4. Made the screen on SwiftUI 
  
  ---
  Used in a project:
