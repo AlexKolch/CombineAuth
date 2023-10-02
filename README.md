@@ -14,5 +14,5 @@ Completed tasks:
 * Combine
 * GCD
 ---
-![Image alt](https://github.com/AlexKolch/CombineAuth/blob/main/Screen/Simulator2-Screen-Shot---iPhone-14-Pro---2023-08-08-at-19.07.41.jpg)
-![Image alt](https://github.com/AlexKolch/CombineAuth/blob/main/Screen/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-08-09%20at%2013.07.38.png)
+![Image alt](https://github.com/AlexKolch/CombineAuth/blob/main/Screen/1.jpg)
+![Image alt](https://github.com/AlexKolch/CombineAuth/blob/main/Screen/2.jpg)
